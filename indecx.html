@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Game of rock, paper and scissosrs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>rock paper scissors</h1>
+      <p>𝓖𝓐𝓜𝓔</p>
+      <button id="restart" class="restart_btn">Restart Game</button>
+      <div class="scores">
+        <p>Player: 0</p>
+        <p>Computer:0</p>
+        <p>Draw: 0</p>
+      </div>
+      <p>make your selection</p>
+      <div class="choices">
+        <i class="choice fa-solid fa-hand-back-fist" id="fa-hand-back-fist"></i>
+        <i class="choice fa-solid fa-hand" id="fa-hand"></i>
+        <i class="choice fa-solid fa-hand-scissors" id="fa-hand-scissors"></i>
+      </div>
+      <div class="modal">
+        <div id="result" class="model-content">
+          <h2>It's draw</h2>
+          <p>Computer choice <strong></strong></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

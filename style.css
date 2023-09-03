@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+h1 {
+    text-transform: capitalize;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container p {
+    font-size: 27px;
+    font-weight: 600;
+    margin: 20px 0;
+    font-style: 'Josefin Sans', sans-serif;
+}
+.restart-btn {
+    display: none;
+    background-color: white;
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.scores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 90px;
+}
+.scores p:nth-child(1) {
+    background-color: lightblue;
+}
+.scores p:nth-child(2) {
+    background-color: lightcoral;
+}
+.scores p:nth-child(3) {
+    background-color: lightgreen;
+}
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+i {
+    font-size: 100px;
+}
+.choices i:nth-child(1):hover {
+    color: blue;
+    transition: 0.3s ease;
+}
+.choices i:nth-child(2):hover {
+    color: lightpink;
+    transition: 0.3s ease;
+}
+.choices i:nth-child(3):hover {
+    color: lightgreen;
+    transition: 0.3s ease;
+}
+.modal {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+}
+.modal .model-content {
+    position: inherit;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    top: 25%;
+    left: 40%;
+    border-radius: 10px;
+}
+.modal .model-content h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+.restart_btn {
+    display: none;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.restart_btn:hover {
+    color: white;
+    background-color: lightblue;
+    border: 1px solid lightcoral;
+}
+.text_win {
+    color: lightgreen;
+    font-size: 50px;
+}
+.text_lose {
+    color: lightcoral;
+    font-size: 50px;
+}
